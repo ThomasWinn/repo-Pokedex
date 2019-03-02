@@ -1,0 +1,47 @@
+.Header {
+  background-color: lightgreen;
+}
+
+
+
+
+.PokemonCard {
+  height: 252px;
+  width: 220px;
+  background-color: white;
+  border-radius: 2px;
+  margin: 20px;
+  float: left;
+}
+
+.PokemonName {
+  font-family: 'roboto';
+  font-weight: bold;
+  height: 24px;
+  width: 73px;
+  color: black;
+  font-size: 16px;
+}
+
+.RectangleSeparator {
+  height: 1px;
+  width: 220px;
+  background-color: lightgrey;
+}
+
+.img {
+  height: 104px;
+  width: 104px;
+}
+
+.PokemonGrassType {
+  height: 22px;
+  width: 56px;
+  background-color: lightgreen;
+}
+
+.PokemonPoisonType {
+  height: 22px;
+  width: 56px;
+  background-color: purple;
+}
