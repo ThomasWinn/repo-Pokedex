@@ -1,8 +1,19 @@
 .Header {
   background-color: lightgreen;
+
+  height: 100px;
+  width: 928px;
 }
 
+.HMSA {
+  padding-left: 48px;
+  padding-right: 48px;
+}
 
+.PokemonListBackground {
+  background-color: black;
+  padding-left: 48px;
+}
 
 
 .PokemonCard {
@@ -10,38 +21,72 @@
   width: 220px;
   background-color: white;
   border-radius: 2px;
-  margin: 20px;
+  margin: 16px;
   float: left;
 }
 
+body{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(85, 166,156,1);
+  height: 1024px;
+  width: 1024px;
+}
+
 .PokemonName {
-  font-family: 'roboto';
-  font-weight: bold;
-  height: 24px;
-  width: 73px;
-  color: black;
+  position: absolute;
+  top: 17px;
+  left: 24px;
+  right: 143px;
+  bottom: 211px;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto';
   font-size: 16px;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  line-height: 24px;
+
 }
 
 .RectangleSeparator {
+  position: absolute;
+  top: 155px;
+  left: 64px;
   height: 1px;
   width: 220px;
   background-color: lightgrey;
 }
 
-.img {
+.PokemonIMG {
+  position: relative;
   height: 104px;
   width: 104px;
+  top: 78px;
+  bottom: 70px;
+  left: 58px;
+  right: 58px;
 }
 
 .PokemonGrassType {
   height: 22px;
   width: 56px;
   background-color: lightgreen;
+  font-family: 'SFUIText-Regular';
+  font-size: 12px;
+  text-align: center;
+  border: 5px darkgreen;
+
 }
 
 .PokemonPoisonType {
   height: 22px;
   width: 56px;
   background-color: purple;
+  text-align: center;
+  font-family: 'SFUIText-Regular';
+  font-size: 12px;
+  border: 5px pink;
 }
