@@ -1,92 +1,162 @@
-.Header {
-  background-color: lightgreen;
 
-  height: 100px;
-  width: 928px;
+html {
+  box-sizing: border-box;
+  font-family: Roboto, SF UI Text
 }
 
-.HMSA {
-  padding-left: 48px;
-  padding-right: 48px;
+body {
+  background-color: rgba(85, 166, 156, 1);
+  margin: 40px, 48px;
+  line-height: 1.4;
 }
 
-.PokemonListBackground {
-  background-color: black;
-  padding-left: 48px;
+img {
+  max-width: 100%;
+  height: 104px;
+  width: 104px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
 }
+
+.wrapper {
+  display: grid;
+  grid-gap: 16px;
+  margin-bottom: 48px;
+}
+
+/* Navigation */
+
+.main-nav {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.main-nav ul {
+  display: grid;
+  grid-gap: 20px;
+  list-style: none;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.main-nav a {
+  background: RGB(81,159,149);
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  font-style: SF UI Text;
+  color: RGB(69,137,128);
+  align-items: center;
+
+}
+
+.search {
+  height: 96px;
+  width: 456px;
+}
+
+.left {
+  height: 64px;
+  width: 64px;
+
+}
+
+.right {
+  height: 64px;
+  width: 64px;
+}
+
+/* Pokemon Container */
+
+.Pokemon-container {
+  display: grid;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  width: 1000px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+
 
 
 .PokemonCard {
-  height: 252px;
-  width: 220px;
-  background-color: white;
-  border-radius: 2px;
-  margin: 16px;
-  float: left;
+  background: white;
+  border-radius: 5px;
+  height: 275px;
+  width: 243px;
 }
 
-body{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: rgba(85, 166,156,1);
-  height: 1024px;
-  width: 1024px;
-}
-
-.PokemonName {
-  position: absolute;
-  top: 17px;
-  left: 24px;
-  right: 143px;
-  bottom: 211px;
-  height: 100%;
-  width: 100%;
-  font-family: 'Roboto';
+.PokemonCard h1 {
   font-size: 16px;
-  font-weight: bold;
-  color: black;
-  text-align: left;
-  line-height: 24px;
-
+  margin-left: 24px;
 }
 
-.RectangleSeparator {
-  position: absolute;
-  top: 155px;
-  left: 64px;
+.PokemonCard ul {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 31px;
+}
+
+.divider {
+  width: auto;
   height: 1px;
-  width: 220px;
+  margin-top: 14px;
+  margin-bottom: 22px;
   background-color: lightgrey;
 }
 
-.PokemonIMG {
-  position: relative;
-  height: 104px;
-  width: 104px;
-  top: 78px;
-  bottom: 70px;
-  left: 58px;
-  right: 58px;
+/* Pokemon Types */
+
+.typeGrass {
+  color: rgba(82, 196, 26, 1);
+  background: lightgreen;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: green;
+  list-style: none;
+  height: 22px;
+  width: auto;
+  text-align: center;
+  margin-right: 24px;
 }
 
-.PokemonGrassType {
-  height: 22px;
-  width: 56px;
-  background-color: lightgreen;
-  font-family: 'SFUIText-Regular';
-  font-size: 12px;
-  text-align: center;
-  border: 5px darkgreen;
 
+
+
+.typePoison {
+  color: rgba(114, 46, 209, 1);
+  background: pink;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: purple;
+  list-style: none;
+  height: 22px;
+  width: auto;
+  text-align: center;
+  margin-right: 24px;
 }
 
-.PokemonPoisonType {
+
+.typeFire {
+  color: rgba(114, 46, 209, 1);
+  background: yellow;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: darkred;
+  list-style: none;
   height: 22px;
-  width: 56px;
-  background-color: purple;
+  width: auto;
   text-align: center;
-  font-family: 'SFUIText-Regular';
-  font-size: 12px;
-  border: 5px pink;
+  margin-right: 24px;
+}
+
+
+.typeBlank {
+  list-style: none;
 }
